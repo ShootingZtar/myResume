@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #app {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+}
